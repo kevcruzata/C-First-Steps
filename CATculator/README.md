@@ -1,6 +1,6 @@
-# 🐱 MAC - Meow Age Calculator
+# 🐱 CATculator - Cat to Human Age Converter
 
-**MAC (Meow Age Calculator)** is a simple C program that converts a cat's age into an approximate human age.
+**CATculator** is a simple C program that converts your cat's age into an approximate human age.
 
 ### 💡 Features
 - Takes your cat's name and age in years + months
@@ -14,5 +14,5 @@
 
 ### 🚀 How to Run
 ```bash
-gcc -o mac mac.c
-./mac
+gcc -o cat cat.c
+./cat
