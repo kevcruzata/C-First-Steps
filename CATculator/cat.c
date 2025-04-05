@@ -1,13 +1,15 @@
-// MAC - Meow Age Calculator : Converting Cat Age to Human Age
+// CATculator - Cat to Human Age Converter
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
 
 #define NAME_LEN 100
+#define SPACE printf("\n");
 
 int main(void)
 {
+    SPACE
     char repeat;
     do
     {
@@ -34,9 +36,6 @@ int main(void)
         // calculate - total cat months
         int catmos = (years * 12) + months;
         int manmos;
-
-        // print - cat's human age
-        printf("%s's human age is ", name);
 
         // calculate - cat age in human age in months
         if (catmos <= 12)
@@ -71,20 +70,27 @@ int main(void)
             group = "now a senior!";
         }
 
+        // print - cat's human age
+        SPACE
+        printf("%s's human age is ", name);
+
         // print - result
         printf("%i %s and %i %s old — %s\n",
                totmanyrs, (totmanyrs == 1) ? "year" : "years",
                totmanmos, (totmanmos == 1) ? "month" : "months",
                group);
+        SPACE
 
         // ask - repeat
-        printf("Do you want to check another cat? (y/n): ");
+        printf("Do you want to convert another one? (y/n): ");
         scanf(" %c", &repeat);
         while (getchar() != '\n'); // clear buffer
+        SPACE
     }
     while (tolower(repeat) == 'y');
 
-    printf("Thanks for using the MAC - Meow Age Calc!\n");
+    printf("Thanks for using the CATculator - Cat to Human Age Converter!\n");
+    SPACE
 
     return 0;
 }
