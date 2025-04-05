@@ -7,7 +7,7 @@ A simple C program that converts your cat's age (in years and months) to its app
 - Asks for age in years and months 
 - Calculates total cat months 
 - Converts to human age 
-- Classifies your cat as a kitten, adult, or senior 🎯
+- Classifies your cat as a kitten, adult, or senior
 
 ## Age Conversion Logic
 Based on the guide from [Daily Paws](https://www.dailypaws.com/cats-kittens/health-care/cat-age-in-human-years):
