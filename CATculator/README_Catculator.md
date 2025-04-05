@@ -1,4 +1,4 @@
-# 🐾 CATculator - Cat to Human Age Converter 🐱
+# 😸 CATculator - Cat to Human Age Converter
 
 A simple C program that converts your cat's age (in years and months) to its approximate human age — because curiosity isn’t just for cats. 😸
 
