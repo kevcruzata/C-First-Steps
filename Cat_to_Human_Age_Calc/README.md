@@ -1,4 +1,4 @@
-# 🐾 MAC - Meow Age Calculator 🐱
+# 🐾 CATculator - Cat to Human Age Converter 🐱
 
 A simple C program that converts your cat's age (in years and months) to its approximate human age — because curiosity isn’t just for cats. 😸
 
@@ -19,5 +19,5 @@ Based on the guide from [Daily Paws](https://www.dailypaws.com/cats-kittens/heal
 ## ⚙️ Compile & Run
 
 ```bash
-gcc -o mac mac.c
-./mac
+gcc -o cat cat.c
+./cat
