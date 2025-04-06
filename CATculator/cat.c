@@ -37,7 +37,7 @@ int main(void)
         int manmos;
 
         // calculate - cat age in human age in months
-        if (catmos < 12)
+        if (catmos <= 12)
         {
             manmos = (int)(15 * catmos / 12);
         }
@@ -56,7 +56,7 @@ int main(void)
 
         // classify - age group
         const char *group;
-        if (catmos < 12)
+        if (catmos <= 12)
         {
             group = "still a kitten!";
         }
