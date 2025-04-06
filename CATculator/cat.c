@@ -1,15 +1,14 @@
 // CATculator - Cat to Human Age Converter
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
 
 #define NAME_LEN 100
-#define SPACE printf("\n");
 
 int main(void)
 {
-    SPACE
+    printf("\n");
     char repeat;
     do
     {
@@ -17,7 +16,7 @@ int main(void)
         char name[NAME_LEN];
         printf("What's your cat's name? ");
         fgets(name, sizeof(name), stdin);
-        name[strcspn(name, "\n")] = 0; // remove newline character
+        name[strcspn(name, "\n")] = 0;
 
         // ask - age in cat years and months
         int years, months;
@@ -29,7 +28,7 @@ int main(void)
             printf("In months? ");
             scanf("%d", &months);
 
-            while (getchar() != '\n'); // clear input buffer
+            while (getchar() != '\n');
         }
         while (years < 0 || months < 0 || months >= 12);
 
@@ -71,26 +70,20 @@ int main(void)
         }
 
         // print - cat's human age
-        SPACE
-        printf("%s's human age is ", name);
+        printf("\n%s's human age is ", name);
 
         // print - result
-        printf("%i %s and %i %s old — %s\n",
+        printf("%i %s and %i %s old — %s\n\n",
                totmanyrs, (totmanyrs == 1) ? "year" : "years",
                totmanmos, (totmanmos == 1) ? "month" : "months",
                group);
-        SPACE
 
         // ask - repeat
-        printf("Do you want to convert another one? (y/n): ");
+        printf("Do you want to convert another one? (y/n): \n\n");
         scanf(" %c", &repeat);
-        while (getchar() != '\n'); // clear buffer
-        SPACE
+        while (getchar() != '\n');
     }
     while (tolower(repeat) == 'y');
-
-    printf("Thanks for using the CATculator - Cat to Human Age Converter!\n");
-    SPACE
 
     return 0;
 }
