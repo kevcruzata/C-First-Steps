@@ -34,23 +34,21 @@ int main(void)
 
         // calculate - total cat months
         int catmos = (years * 12) + months;
-        float manmos_f;
+        float manmos;
 
         // calculate - cat age in human age in months
         if (catmos <= 12)
         {
-            manmos_f = (15.0 * catmos / 12);
+            manmos = (15.0 * catmos);
         }
         else if (catmos > 12 && catmos <= 24)
         {
-            manmos_f = (12.5 * catmos);
+            manmos = (12.5 * catmos);
         }
         else
         {
-            manmos_f = ((4 * (catmos - 24)) + 300);
+            manmos = ((4 * (catmos - 24)) + 300);
         }
-        
-        int manmos = (int)(manmos_f + 0.5);
 
         // convert - total human months to years and months
         int totmanyrs = manmos / 12;
