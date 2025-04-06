@@ -47,6 +47,12 @@ int main(void)
     return 0;
 }
 
+
+
+
+
+
+
 // FUNCTIONS
 
 void get_cat_name(char name[NAME_LEN])
