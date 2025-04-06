@@ -39,7 +39,7 @@ int main(void)
         // calculate - cat age in human age in months
         if (catmos <= 12)
         {
-            manmos = (int)(15 * catmos / 12);
+            manmos = (int)(15.0 * catmos / 12);
         }
         else if (catmos > 12 && catmos <= 24)
         {
